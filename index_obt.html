@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>GEOLAB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- CSS Integrado -->
+<style>
+body,h1,h2,h3,h4,h5,h6, .w3-xlarge {font-family: 'Exo', sans-serif;}
+.w3-bar,h1,button {font-family: 'Exo', sans-serif;}
+.fa-futbol-o,.fa-bar-chart {font-size:200px}
+.GEOLAB {
+  max-width: 100%;
+  width: 110px;
+  height: auto;
+  margin: auto;
+  border: 3px;
+  padding: 0px;
+
+  }
+
+.TIME {
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-top: 50px;
+  position: absolute;
+}
+
+</style>
+
+<body>
+
+<!-- Navbar -->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white"><img src="geolab.png" class="GEOLAB w3-button">
+    <a href="https://www.udesc.br/faed/geolab/contatos" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-red w3-right">Contato</a>
+    <a href="https://www.udesc.br/faed/geolab/projetocovid19" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-red w3-right">Sobre</a>
+
+    <div class="w3-dropdown-hover w3-right w3-hide-small">
+    <button class="w3-button w3-padding-large w3-hover-red w3-hide-small">Série Temporal</button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="index_temp.html" class="w3-bar-item w3-white w3-button w3-dropdown-hover w3-hide-small w3-hover-red">Confirmados</a>
+      <a href="index_obt.html" class="w3-bar-item w3-button w3-dropdown-hover w3-hide-small w3-hover-red">Óbitos</a>
+      <a href="index_stats.html" class="w3-bar-item w3-button w3-dropdown-hover w3-hide-small w3-hover-red">Estatísticas</a>
+    </div>
+  </div>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-red w3-right">Home</a>
+  </div>
+  </div>
+
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+  <!--<a href="http://painel-geolab.epizy.com/index3.html" class="w3-bar-item w3-button w3-padding-large">Mapas 3D</a> -->
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"></a>
+    <a href="index_temp.html" class="w3-bar-item w3-button w3-padding-large">Série Temporal: Confirmados</a>
+    <a href="index_obt.html" class="w3-bar-item w3-button w3-padding-large">Série Temporal: Óbitos</a>
+    <a href="index_stats.html" class="w3-bar-item w3-button w3-padding-large">Estatísticas</a>
+    <a href="https://www.udesc.br/faed/geolab/projetocovid19" class="w3-bar-item w3-button w3-padding-large">Sobre</a>
+    <a href="https://www.udesc.br/faed/geolab/contatos" class="w3-bar-item w3-button w3-padding-large">Contato</a>
+
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class=TIME>
+<iframe width="100%" height="100%" src="https://www.arcgis.com/apps/MapJournal/index.html?appid=4a40c75ed7c341799c14568ec57257b5" frameborder="0" scrolling="no"></iframe>
+</header>
+
+<!-- First Grid -->
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
